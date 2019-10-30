@@ -1,2 +1,2 @@
 Front end: semantic-UI
-back end: Flask
+back end: Flask(python)
