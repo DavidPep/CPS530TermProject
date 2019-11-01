@@ -1,2 +1,17 @@
-Front end: semantic-UI
-back end: Flask(python)
+Info:
+  Front end: semantic-UI
+  back end: Flask(python)
+  
+Break Down:
+
+Ashley
+-
+  
+David
+-
+   
+Jonathan
+-
+   
+Wei
+-
