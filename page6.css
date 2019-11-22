@@ -11,12 +11,24 @@ body{
     padding-right:5%;
     padding-bottom: 5%;
 }
+#column{
+  padding-top: 0;
+  padding-left:0%;
+  padding-right:10%;
+  padding-bottom: 0;
+}
+
+
 
 #cards{
     padding-left: 5%;
     padding-right: 5%;
 }
- 
+.section{
+    padding-right:10%;
+    padding-left: 0%;
+ }
+
  #incardhead1{
     font-style: italic;
     font: Helvetica ;
@@ -108,7 +120,6 @@ body{
 
   }
 
-
   @media screen and  (min-width:700px){
     .flip-card{
       flex-direction: row;
@@ -117,9 +128,3 @@ body{
       align-items: center;
     }
   }
-
-
-
-
-
-
