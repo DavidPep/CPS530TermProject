@@ -111,3 +111,19 @@ body{
     color: rgb(42, 42, 44);
 
   }
+
+
+  @media screen and  (min-width:700px){
+    .flip-card{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+
+
+
+
