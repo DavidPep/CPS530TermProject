@@ -1,94 +1,169 @@
-<!DOCTYPE HTML>
-<!--
-    Read Only by HTML5 UP
-    html5up.net | @n33co
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Page 1</title>
-	<style type="text/css" >
-		h1{
-			text-align: center;
-			font-style: italic;
-			font: Helvetica;
-			color: gray;
-		}
-		p{
-			font: Helvetica;
-		}
-		.input{
-
-			text-align: center;
-		}
-		.word{
-			color: black;
-			font-size: 20px;
-		}
-		body{
-			background-repeat: no-repeat;
-			background: rgb(150, 220, 220);
-			background-attachment: fixed;
-		}
-		img {
-  			margin-left: auto;
-  			margin-right: auto;
-		}
-		#numba2{
-			color: white;
-		}
-		#overlay {
- 		width: 60%;
- 		min-width: 60%;
-  		margin: 3% auto;
-  		display: block;
-  		padding: 2%;
-  		height: 40%;
-  	    background-color: rgba(255, 255, 255, 0.7);
-  		border-radius: 100px;
-  		text-align: center;
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
 }
-		</style> 
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+/* Style the body */
+
+#mainbg {
+    background: url(p6.jpg);
+   
+}
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background: url(page1bg.png);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h {
+  font-size: 40px;  
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color:lightblue;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:floralwhite;
+  color:goldenrod;
+}
+h1{
+	text-align: center;
+	font-style: italic;
+	font: Helvetica;
+	color:chocolate;
+}
+p{
+	font: Helvetica;
+}
+.input{
+    text-align: center;
+}
+.word{
+	color: black;
+    font-size: 20px;
+}
+h2
+{
+    text-align: center;
+}
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  padding: 20px;
+}
+
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+ src="https://code.jquery.com/jquery-3.1.1.min.js"
+ integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </head>
-<body id="overlay">
+<body id="mainbg">
 
-<h1 id="title"> Part 1: Frameworks</h1>
+<div class="header">
+  <h>Semantic UI & Flask</h><br><br>
+  <p><img src="SUlogo.png" width="4%">     <img src="flasklogo.png" width="4%"></p>
+</div>
 
-<h2><b>Frontend: Semantic UI</b></h2>
-<img src="semantic.png" alt="semantic" style="width:70%;"><br>
-<p1>Semantic UI is one of the most popular front-end development framework powered by LESS and jQuery. 
-	And it is a development framework that helps create beautiful, responsive layouts using human-friendly HTML.<p1><br>
-<h3>Popularity</h3>
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
 
-<li>46,835 starts on GitHub</li>
+</div>
+<div class="row">
+        <div class="side">
+                <h2>Content</h2>
+                <p>This page will introduce two frameworks which are Semantic UI and 
+                    Flask based on their popularity, strengths, weakness, and which developers mostly use it 
+                    and for what kind of websites</p>
+        </div>
+        <div class="main">
+            <h1 id="title"> Part 1: Frameworks</h1>
+            <h2>Frontend: Semantic UI</h2>
+            <p style="text-align: center;"><img src="semantic.png" alt="semantic" style="width:50%;"><br>
+            <h3>Introduction</h3>
+            <p1>Semantic UI is one of the most popular front-end development framework powered by LESS and jQuery. 
+	And it is a development framework that helps create beautiful, responsive layouts using human-friendly HTML.</p1><br>
+            <h3>Popularity</h3>
+                <li>46,835 starts on GitHub</li>
+            <h3>Strengths</h3>
+                <li>Customisation: In Semantic UI you have more options for the elements.</li>
+                <li>Semantic solutions: Diversity of code languages makes it easier to grasp fot beignners.</li>
+                <li>Convenient: Semantic UI is very well documented, with lots of examples to follow and use.</li>
+                <li>Design: Semantic UI has a beautiful and modern design, which makes it great for a range of different developers.</li>
+            <h3>Weaknesses</h3>
+                <li>Complex: Semantic UI framework is quite complicated, so the installation process is way more complex than other front-end frameworks</li>
+                <li>JavaScript customization: Since many features in Semantic UI use JavaScript customization solutions, 
+                    so you may struggle with the framework if you are not familiar with JavaScript.</li>
+            <h3>Users and Purpose</h3>
+                <p>The extremely rich features make Semantic UI satisfied for most web development requirements. 
+                    It is the best choice for beginners and those who want a lightweight, nimble framework. 
+                    Also, some companies' web developers use it for a more beautiful design of their websites or applications, 
+                    such as Snapchat, Sport Clips Inc, and Vogue Shop.</p>
+                
 
-<h3>Strengths</h3>
-<li>Customisation: In Semantic UI you have more options for the elements.</li>
-<li>Semantic solutions: Diversity of code languages makes it easier to grasp fot beignners.</li>
-<li>Convenient: Semantic UI is very well documented, with lots of examples to follow and use.</li>
-<li>Design: Semantic UI has a beautiful and modern design, which makes it great for a range of different developers.</li>
-<h3>Weaknesses</h3>
-<li>Complex: Semantic UI framework is quite complicated, so the installation process is way more complex than other front-end frameworks</li>
-<li>JavaScript customization: Since many features in Semantic UI use JavaScript customization solutions, 
-    so you may struggle with the framework if you are not familiar with JavaScript.</li>
+            <h2><b>Backend: Flask</b></h2>
 
-<h2><b>Backend: Flask</b></h2>
-
-<h3>Popularity</h3>
-<li>Most</li>
-<h3>Strengths</h3>
-<li>Used python with allows for easy minipulation of json information form formatiing apis</li>
-<h3>Weaknesses</h3>
-<li>will not wrk on all servers</li>
+            <h3>Popularity</h3>
+            <li>Most</li>
+            <h3>Strengths</h3>
+            <li>Used python with allows for easy minipulation of json information form formatiing apis</li>
+            <h3>Weaknesses</h3>
+            <li>will not wrk on all servers</li>
+        </div>
+</div>
 
 </body>
-<footer id = "numba2">
-	<p>Go to <a href="page2.html">page 2</a></p>
-</footer>
 </html>
