@@ -1,195 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+    Read Only by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+	<title>Page 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .header {
+        padding: 60px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        }
 
-/* Style the body */
-
-#mainbg {
-    background: url(p6.jpg);
-   
-}
-
-/* Header/logo Title */
-.header {
-  padding: 100px;
-  text-align: center;
-  background: url(page1bg.png);
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h {
-  font-size: 40px;  
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color:lightblue;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color:floralwhite;
-  color:goldenrod;
-}
-h1{
-	text-align: center;
-	font-style: italic;
-	font: Helvetica;
-	color:chocolate;
-}
-p{
-	font: Helvetica;
-}
-.input{
-    text-align: center;
-}
-.word{
-	color: black;
-    font-size: 20px;
-}
-h2
-{
-    text-align: center;
-}
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  padding: 20px;
-}
-
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-.next {
-  background-color:darkorange;
-  color: white;
-}
-
-</style>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+/* Page Content */
+    .content {padding:20px;}
+    * {box-sizing: border-box}
+    
+    /* Set height of body and the document to 100% */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+    
+    /* Style tab links */
+    .tablink {
+      background-color: lightblue;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 33.3333%;
+    }
+    
+    .tablink:hover {
+      background-color: orange;
+    }
+    
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+    }
+    .next {
+        background-color:darkorange;
+        color: white;
+    }
+    
+    #Prerequisites {color: black;}
+    #SemanticsUI {color: black;}
+    #Flask{color:black;}
+    </style>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 <script
- src="https://code.jquery.com/jquery-3.1.1.min.js"
- integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
- crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+</script>
 </head>
-<body id="mainbg">
-
+<body>
 <div class="header">
-  <h>Semantic UI & Flask</h><br><br>
-  <p><img src="SUlogo.png" width="4%">     <img src="flasklogo.png" width="4%"></p>
+    <div style="text-align:center;">
+        <h1> How to install the frameworks</h1>
+        <p>Installing frameworks can be hard. With this page we wills how a way to install the semantaic ui and flask frameworks on your website</p>
+    </div>
+</div>  
+
+<div class="content">
+        <button class="tablink" onclick="openPage('Prerequisites', this, '#FFC133')" id="defaultOpen">Prerequisites</button>
+        <button class="tablink" onclick="openPage('SemanticsUI', this, 'orange')">Semantics UI</button>
+        <button class="tablink" onclick="openPage('Flask', this, 'darkorange')">Flask</button>
+
+<div id="Prerequisites" class="tabcontent">
+        <h2>Prerequisites</h2>
+        <li>Ryerson server will not allow implinenting frameworks so you must use a different one</li>
+        <li>Many of these steps can be found on the webites that you will be directed to</li>
+        <li>Now lets get started!</li>
 </div>
-
-<div class="navbar">
-  <a href="page2.html">Page 2</a>
-  <a href="page3.html">Page 3</a>
-  <a href="page4.html">Page 4</a>
-  <a href="page5.html">Page 5</a>
-  <a href="page6.html">Page 6</a>
-
-
+<div id="SemanticsUI" class="tabcontent">
+    <h2>Semantics UI</h2>
+    <p>This section will teach you a step by step way of implementing the sematinc ui framework. There are many different ways to install this framework. The following section will show you the two main ways. The benefits of using the second mehtod is it allows for overwriting fuction.</p>
+    <H2>Way 1 (Simpler, but less fluid)</H2>
+    <ol>Look up Semantic UI CDN and go to this <a href="#place">link</a></ol>
+    <ol>Look for files "Semantic.min.js" and "sementic.min.css". And copy the cdn</ol>
+    <ol>Impliment them into you code like below</ol>
+    <ol>And now you are done</ol>
+    <h2>Way 2 (Fluid, but less simple)</h2>
+    <ol>Go to semantic ui website</ol>
+                <ol>INstall this zip file into your websites directory</ol>
+                <ol>Look for files "Semantic.min.js" and "sementic.min.css"</ol>
+                <ol>Copy the paths and insert them into to your codel like below:</ol>
+                <ol>And now you are done</ol>
 </div>
-<div class="row">
-        <div class="side">
-                <h2>Content</h2>
-                <p>This page will introduce two frameworks which are Semantic UI and 
-                    Flask based on their popularity, strengths, weakness, and which developers mostly use it 
-                    and for what kind of websites</p>
-        </div>
-        <div class="main">
-            <h1 id="title"> Part 1: Frameworks</h1>
-            <h2>Frontend: Semantic UI</h2>
-            <p style="text-align: center;"><img src="semantic.png" alt="semantic" style="width:50%;"><br>
-            <h3>Introduction</h3>
-            <p1>Semantic UI is one of the most popular front-end development framework powered by LESS and jQuery. 
-	And it is a development framework that helps create beautiful, responsive layouts using human-friendly HTML.</p1><br>
-            <h3>Popularity</h3>
-                <li>46,835 starts on GitHub</li>
-            <h3>Strengths</h3>
-                <li>Customisation: In Semantic UI you have more options for the elements.</li>
-                <li>Semantic solutions: Diversity of code languages makes it easier to grasp fot beignners.</li>
-                <li>Convenient: Semantic UI is very well documented, with lots of examples to follow and use.</li>
-                <li>Design: Semantic UI has a beautiful and modern design, which makes it great for a range of different developers.</li>
-            <h3>Weaknesses</h3>
-                <li>Complex: Semantic UI framework is quite complicated, so the installation process is way more complex than other front-end frameworks</li>
-                <li>JavaScript customization: Since many features in Semantic UI use JavaScript customization solutions, 
-                    so you may struggle with the framework if you are not familiar with JavaScript.</li>
-            <h3>Users and Purpose</h3>
-                <p>The extremely rich features make Semantic UI satisfied for most web development requirements. 
-                    It is the best choice for beginners and those who want a lightweight, nimble framework. 
-                    Also, some companies' web developers use it for a more beautiful design of their websites or applications, 
-                    such as Snapchat, Sport Clips Inc, and Vogue Shop.</p>
-                
-
-            <h2><b>Backend: Flask</b></h2>
-            <p style="text-align: center;"><img src="flask.png" alt="flask" width="50%"><br>
-            <h3>Introduction</h3>
-            <p>Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. 
-                It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.</p>
-            <h3>Popularity</h3>
-            <li>Top 10 most popular back-end framework</li>
-            <li>47.6K stars on GitHub</li>
-            <h3>Strengths</h3>
-            <li>Used python with allows for easy minipulation of json information form formatiing apis</li>
-            <li>Minimalist without sacrificing power</li>
-            <li>Extremely flexible</li>
-            <li>Simple to learn and use</li>
-            <li>Routing URLs is easy</li>
-            <li>Small core and easily extensible</li>
-            <h3>Weaknesses</h3>
-            <li>Not async-friendly</li>
-            <li>Lack of database/ORM/forms</li>
-            <li>will not wrk on all servers</li>
-            <h3>Users and Purpose</h3>
-            <p>Flask is a powerful Python web application framework, lots of companies use it for their tech stacks, 
-                including Netflix, reddit, and Lyft.</p><br>
-	    <p style="text-align:right;"><a href="page2.html" class="next" >Next Page &raquo;</a></p><br>
+<div id="Flask" class="tabcontent">
+    <h2>Flask</h2>
+    <p>This section will teach you a step by step way of implementing the flask framework</p>
+    <h3>Part 1</h3>
+    <li>Go to the Flask website at link</li>
+    <li>On this page</li>
 </div>
+<script>
+    function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+<p style="padding:1%; text-align: right;"><a href="page3.html" class="next" >Next Page &raquo;</a></p>
 
 </body>
 </html>
