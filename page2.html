@@ -29,7 +29,7 @@
     
     /* Style tab links */
     .tablink {
-      background-color: lightblue;
+      background-color: #FFC133;
       color: white;
       float: left;
       border: none;
@@ -66,6 +66,30 @@
     color: white;
   
     }
+    .navbar {
+  overflow: hidden;
+  background-color:lightblue;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:floralwhite;
+  color:goldenrod;
+}
+
 
     
     #Prerequisites {color: black;}
@@ -87,10 +111,18 @@
         <p>Installing frameworks can be hard. With this page we wills how a way to install the semantaic ui and flask frameworks on your website</p>
     </div>
 </div>  
-
+<div class="navbar">
+        <a href="index.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+        <a href="page4.html">Page 4</a>
+        <a href="page5.html">Page 5</a>
+        <a href="page6.html">Page 6</a>
+      
+      </div>
 <div class="content">
-        <button class="tablink" onclick="openPage('Prerequisites', this, '#FFC133')" id="defaultOpen">Prerequisites</button>
-        <button class="tablink" onclick="openPage('SemanticsUI', this, 'orange')">Semantics UI</button>
+        <button class="tablink" onclick="openPage('Prerequisites', this, 'darkorange')" id="defaultOpen">Prerequisites</button>
+        <button class="tablink" onclick="openPage('SemanticsUI', this, 'darkorange')">Semantics UI</button>
         <button class="tablink" onclick="openPage('Flask', this, 'darkorange')">Flask</button>
 
 <div id="Prerequisites" class="tabcontent">
