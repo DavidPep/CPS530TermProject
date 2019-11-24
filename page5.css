@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(247, 250, 252);
+}
+
+h1 {
+    font-family:'Amiri', serif;
+    font-weight: 800;
+    font-size: 55px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 8%;
+    border-bottom-style: outset;
+    border-bottom-color: rgb(154,247,239);
+  }
+
+
+
+p{
+    font-family: 'Gupter', serif;
+    font-size: 30px;
+    padding-top: 5%;
+    padding-left: 25%;
+    padding-right: 20%;
+    
+}
