@@ -224,16 +224,14 @@ def hello():
 	<title>Flask Site</title>
 {% endif %}
 <!--using a layout and block content to change pages -->
-First create a layout.html file in that file add all of your css 
-and script tags that will be used in your menus and footer
-to have the page content always show without writing it over 
-and over you can use block content.	
+First create a layout.html file in that file add all of your css and script tags that will be used in your menus and footerto have the page content always show without writing it over and over you can use block content.	
+	
 <body>
-	{% block content %} {% end block content %} <!--dsplays your content -->
+	{% block content %} {% end block content %} <!--displays your content -->
 </body>
 
-Next create another html file call home.html 
-when done you can inherit layout.html by adding
+Next create another html file call home.html when done you can inherit layout.html by adding
+	
 {% extends "layout.html" %}
 {% block content %} 
 <!-- add you home page body content here-->
