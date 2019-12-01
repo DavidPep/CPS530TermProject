@@ -88,12 +88,6 @@
   background-color:floralwhite;
   color:goldenrod;
 }
-.overflow {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 
     #SemanticsUI {color: black;}
     #Flask{color:black;}
@@ -196,11 +190,11 @@
 <div  id="Flask" class="tabcontent">
 <p>Below will show you the basics of creating a site flask site</p>
 <h1>Backend with Flask</h1>
-<div class="overflow"style="font-size: 15px;">
+<div style="font-size: 15px;">
 <li>Using flask</li>
 </div>
 <div class="ui existing segment">
-<xmp style ="color: darkorange; font-size: 20px;">
+<xmp style ="color: darkorange; font-size: 20px; white-space: pre-wrap;">
 
 <!-- import flask into your python file-->
 from flask import Flask
@@ -230,14 +224,16 @@ def hello():
 	<title>Flask Site</title>
 {% endif %}
 <!--using a layout and block content to change pages -->
-First create a layout.html file in that file add all of your css and script tags that will be used in your menus and footer
-to have the page content always show without writing it over and over you cna use block content.
-	
+First create a layout.html file in that file add all of your css 
+and script tags that will be used in your menus and footer
+to have the page content always show without writing it over 
+and over you can use block content.	
 <body>
 	{% block content %} {% end block content %} <!--dsplays your content -->
 </body>
 
-Next create another html file call home.html when done you can inherit layout.html by adding
+Next create another html file call home.html 
+when done you can inherit layout.html by adding
 {% extends "layout.html" %}
 {% block content %} 
 <!-- add you home page body content here-->
