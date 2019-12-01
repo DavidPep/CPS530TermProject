@@ -1,20 +1,35 @@
-body{
-    background-color: rgb(247, 250, 252);
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    }
+
+/* Page Content */
+.content {padding:20px;}
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
 }
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.next {
+    background-color:darkorange;
+    color: white;
 
-h1 {
-    font-family:'Amiri', serif;
-    font-weight: 800;
-    font-size: 55px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 8%;
-    border-bottom-style: outset;
-    border-bottom-color: rgb(154,247,239);
-  }
+}
+.previous {
+background-color: darkorange;
+color: white;
 
-
+}
 
 p{
     font-family: 'Gupter', serif;
@@ -24,3 +39,26 @@ p{
     padding-right: 20%;
     
 }
+.navbar {
+    overflow: hidden;
+    background-color:lightblue;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color:floralwhite;
+    color:goldenrod;
+  }
