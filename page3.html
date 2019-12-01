@@ -175,6 +175,8 @@
 <img src="Signup.png" height="600px" width="600px">
 </div>
 </div>
+	 
+
 
 <h2>Results</h2>
 <p>GO TO <a href="http://jonathanong.pythonanywhere.com/login">this link</a> TO SEE THE RESULTS</p>
@@ -186,22 +188,61 @@
 
 <!--jonathan part-->
 
- <div  id="Flask" class="tabcontent">
- <p>Below will show you step by step process of creating the site at<a href="http://jonathanong.pythonanywhere.com/login">this link</a></p>
+<div  id="Flask" class="tabcontent">
+<p>Below will show you the basics of creating a site flask site</p>
 <h1>Backend with Flask</h1>
-<h2>Creating a form</h2>
-<li>Use the <xmp><div class="ui middle aligned center aligned grid"></xmp> to create a centered box with semantic</li>
-<img src="https://images.websitebuilderexpert.com/wp-content/uploads/2018/01/best-free-website-builders.png">
-<p>Step 2</p>
-<li>Create the <img src="https://images.websitebuilderexpert.com/wp-content/uploads/2018/01/best-free-website-builders.png"></li>
-<p>Step 3</p>
-<li><img src="https://images.websitebuilderexpert.com/wp-content/uploads/2018/01/best-free-website-builders.png"></li>
-<p>Step 4</p>
-<li><img src="https://images.websitebuilderexpert.com/wp-content/uploads/2018/01/best-free-website-builders.png"></li>
-<p>Step 5</p>
-<li><img src="https://images.websitebuilderexpert.com/wp-content/uploads/2018/01/best-free-website-builders.png"></li>
+<div style="font-size: 15px;">
+<li>Using flask</li>
 </div>
- </div>
+<div class="ui existing segment">
+<xmp style ="color: darkorange; font-size: 20px;">
+
+<!-- import flask into your python file-->
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/') <!-- this is your route name-->
+def hello_world():
+return 'Hello, World!' <!-- This returns text to creat a html page-->
+
+<!-- Using templates to show html-->
+from flask import render_template <!-- import render template to return a html file-->
+
+@app.route('/')
+@app.route('/home')<!-- you an have multiple routes pointing to one page-->
+def hello():
+    return render_template('index.html')<!-- now you can display html code -->
+
+<!-- Using python in your html--> 
+{% %} <!-- this is a code block add this to you html files to write python code-->
+    
+
+<!--example the below code changes you webpage title-->
+	 
+{% if title %} 
+	<title>Flask Site - {{title}} </title>
+{% else %}
+	<title>Flask Site</title>
+{% endif %}
+<!--using a layout and block content to change pages -->
+First create a layout.html file in that file add all of your css and script tags that will be used in your menus and footer
+to have the page content always show without writing it over and over you cna use block content.
+	
+<body>
+	{% block content %} {% end block content %} <!--dsplays your content -->
+</body>
+
+Next create another html file call home.html when done you can inherit layout.html by adding
+{% extends "layout.html" %}
+{% block content %} 
+<!-- add you home page body content here-->
+{% end block content %}
+	 
+</xmp>
+</div>
+<p>Using this sturcture you can make a site like <a href="http://jonathanong.pythonanywhere.com/login">this one</a></p>
+</div>
+	
 <script>
     function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
